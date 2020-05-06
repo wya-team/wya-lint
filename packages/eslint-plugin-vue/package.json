@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-wya-vue",
-  "version": "0.0.1",
+  "version": "0.0.1-alpha.0",
   "description": "微一案Vue校验",
   "keywords": [
     "eslint",

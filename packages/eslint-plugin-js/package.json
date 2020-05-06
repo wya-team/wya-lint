@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-wya-js",
-  "version": "0.0.1",
+  "version": "0.0.1-alpha.0",
   "description": "微一案JS校验",
   "keywords": [
     "eslint",
