@@ -12,7 +12,22 @@ ruleTester.run('date-separator', rule, {
 	valid: [
 		{
 			code: 'const date = new Date("2020/01/01")'
-		}
+		},
+		{
+			code: 'const date = new Date("1995-12-17T03:24:00")'
+		},
+		{
+			code: 'const date = new Date()'
+		},
+		{
+			code: 'const date = new Date(1995, 11, 17, 3, 24, 0)'
+		},
+		{
+			code: 'const date = new Date(1995, 11, 17)'
+		},
+		{
+			code: 'const date = new Date("December 17, 1995 03:24:00")'
+		},
 	],
 	// 错误的用例
 	invalid: [
