@@ -38,6 +38,22 @@ ruleTester.run('date-separator', rule, {
 				message: '字符串日期禁止使用"-"作为分隔符，在IOS内会报错', // 与rule抛出的错误保持一致
 				type: 'NewExpression' // rule监听的对应钩子
 			}]
-		}
+		},
+		{
+			code: 'const date = new Date("2020-01-01 00:00:00")',
+			output: 'const date = new Date("2020/01/01 00:00:00")',
+			errors: [{
+				message: '字符串日期禁止使用"-"作为分隔符，在IOS内会报错', // 与rule抛出的错误保持一致
+				type: 'NewExpression' // rule监听的对应钩子
+			}]
+		},
+		{
+			code: 'const date = new Date("2020-01-01 00:00")',
+			output: 'const date = new Date("2020/01/01 00:00")',
+			errors: [{
+				message: '字符串日期禁止使用"-"作为分隔符，在IOS内会报错', // 与rule抛出的错误保持一致
+				type: 'NewExpression' // rule监听的对应钩子
+			}]
+		},
 	]
 })

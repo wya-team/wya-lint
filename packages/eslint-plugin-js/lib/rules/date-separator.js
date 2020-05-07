@@ -17,7 +17,7 @@ module.exports = {
 				if (node.callee.name !== 'Date') return;
 				const dateNode = node.arguments && node.arguments[0];
 				if (!dateNode) return
-				if (dateNode.type === 'Literal' && /^\d{4}-\d{2}-\d{2}$/.test(dateNode.value)) {
+				if (dateNode.type === 'Literal' && /^\d{4}-\d{2}-\d{2}( \d{1,2}:(\d{1,2}(:\d{1,2})?)?)?$/.test(dateNode.value)) {
 					context.report({
 						node,
 						loc: dateNode.loc,
