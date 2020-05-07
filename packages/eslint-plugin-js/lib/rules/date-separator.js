@@ -25,7 +25,7 @@ module.exports = {
 						fix: function(fixer) {
 							return fixer.replaceTextRange(dateNode.range, dateNode.raw.replace(/-/g, '/'));
 						}
-                    })
+					});
 				}
 			}
 		}

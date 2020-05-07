@@ -32,7 +32,7 @@
 - 固定定位或绝对定位，left\right，top\bottom，两个方向上必须要设置一个
 - 样式的顺序
 - 颜色采用大写
-- 
+- IphoneX中textarea的placeholder的font-size大小如果比其内容的字体大的话，在删除内容后会出现placeholder文案被遮挡一部分的情况
 
 
 ## JS的ESlint规则
