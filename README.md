@@ -38,6 +38,7 @@
 ## JS的ESlint规则
 - new Date('2020-10-10')在IOS上会报Invalid Date
 - e.composedPath该方法是否为空的校验
+- func的参数不能超过4个
 
 ## .wya的ESLint规则
 
